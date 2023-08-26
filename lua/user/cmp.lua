@@ -45,6 +45,12 @@ local M = {
       "hrsh7th/cmp-nvim-lua",
       commit = "f12408bdb54c39c23e67cab726264c10db33ada8",
     },
+    {
+      "zbirenbaum/copilot-cmp",
+      config = function ()
+        require("copilot_cmp").setup()
+      end
+    },
   },
 }
 
@@ -187,6 +193,7 @@ function M.config()
       { name = "treesitter" },
       { name = "crates" },
       { name = "tmux" },
+      { name = "copilot"},
     },
     confirm_opts = {
       behavior = cmp.ConfirmBehavior.Replace,
