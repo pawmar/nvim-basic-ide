@@ -52,14 +52,11 @@ function M.config()
     "lua_ls",
     "cssls",
     "html",
-    "tsserver",
-    "astro",
     "pyright",
     "bashls",
     "jsonls",
     "yamlls",
-    "marksman",
-    "tailwindcss",
+    -- "marksman",
   }
 
   local default_diagnostic_config = {

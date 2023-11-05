@@ -11,14 +11,11 @@ M.servers = {
   "lua_ls",
   "cssls",
   "html",
-  "tsserver",
-  "astro",
   "pyright",
   "bashls",
   "jsonls",
   "yamlls",
-  "marksman",
-  "tailwindcss",
+  -- "marksman",
 }
 
 function M.config()
