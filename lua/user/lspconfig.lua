@@ -52,7 +52,7 @@ function M.config()
     "lua_ls",
     "cssls",
     "html",
-    "pyright",
+    "pylsp",
     "bashls",
     "jsonls",
     "yamlls",

@@ -11,11 +11,19 @@ M.servers = {
   "lua_ls",
   "cssls",
   "html",
-  "pyright",
+  "pylsp",
   "bashls",
   "jsonls",
   "yamlls",
   -- "marksman",
+}
+
+M.linters = {
+  "ruff",
+}
+
+M.formatters = {
+  "black",
 }
 
 function M.config()
