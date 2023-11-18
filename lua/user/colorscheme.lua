@@ -9,4 +9,34 @@ function M.config()
   vim.cmd.colorscheme "primer_dark"
 end
 
-return M
+local K = {
+  "rebelot/kanagawa.nvim",
+  lazy = false,
+  priority = 1000,
+}
+
+function K.config()
+  require("kanagawa").setup({
+    transparent = true,
+  })
+  vim.cmd.colorscheme "kanagawa"
+end
+
+local T = {
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+}
+
+function T.config()
+  require("tokyonight").setup({
+    transparent = true,
+    style = "night",
+  })
+  vim.cmd.colorscheme "tokyonight"
+end
+
+
+return K
+
